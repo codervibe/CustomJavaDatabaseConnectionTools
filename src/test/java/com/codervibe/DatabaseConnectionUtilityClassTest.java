@@ -10,8 +10,8 @@ import org.junit.Test;
 
 public class DatabaseConnectionUtilityClassTest {
     public static void main(String[] args) {
-//        DatabaseConnectionMainForms dcuc =new DatabaseConnectionMainForms();
-    DatabaseConnectionInfoMain databaseConnectionInfoMain = new DatabaseConnectionInfoMain();
+        DatabaseConnectionMainForms dcuc =new DatabaseConnectionMainForms();
+//    DatabaseConnectionInfoMain databaseConnectionInfoMain = new DatabaseConnectionInfoMain();
     }
 
 
