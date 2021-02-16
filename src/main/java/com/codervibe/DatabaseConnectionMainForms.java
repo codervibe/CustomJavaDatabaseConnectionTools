@@ -8,10 +8,7 @@ package com.codervibe;
  */
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 
 /**
@@ -101,6 +98,13 @@ public class DatabaseConnectionMainForms extends JFrame {
         // 默认第一个单选按钮子菜单选中
         radioButtonMenuItem01.setSelected(true);
 
+        //添加关于子菜单
+        JMenuItem aboutOurMenuItem = new JMenuItem("关于我");
+        //将子菜单添加进关于菜单
+        aboutMenu.add(aboutOurMenuItem);
+
+
+
         /*
          * 菜单项的点击/状态改变事件监听，事件监听可以直接设置在具体的子菜单上（这里只设置其中几个）
          */
@@ -114,6 +118,16 @@ public class DatabaseConnectionMainForms extends JFrame {
 
 
        });
+        /**
+         * 关于我子菜单监听事件
+         */
+        aboutOurMenuItem.addActionListener(e -> {
+            AboutMeForms aboutMeForms=new AboutMeForms();
+            System.out.println("版本 1.0.0.0");
+            System.out.println("作者 codevibe");
+            System.out.println("时间 20210210");
+        });
+
         /**
          * 退出按钮监听事件
          */

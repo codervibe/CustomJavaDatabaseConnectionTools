@@ -22,7 +22,6 @@ public class DatabaseConnectionInfoMain extends JFrame {
         setBounds(450, 200, 700, 500);
         //窗体最上方的标题类似于<title></title>
         setTitle("连接信息");
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(null);
 
         button.setBounds(0,0,100,30);
